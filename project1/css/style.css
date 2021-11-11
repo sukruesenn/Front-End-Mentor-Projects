@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+	--pale-blue: hsl(225, 100%, 94%); /*Soluk Mavi*/
+	--bright-blue: hsl(245, 75%, 52%); /*Açık Mavi*/
+	--very-pale-blue: hsl(225, 100%, 98%); /*Daha Soluk Mavi*/
+	--desaturated-blue: hsl(224, 23%, 55%); /*Doymamış Mavi*/
+	--dark-blue: hsl(223, 47%, 23%); /*Koyu Mavi*/
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Red Hat Display", sans-serif;
+	background-color: var(--pale-blue);
+}
+.bg_image{
+	background: url("../images/pattern-background-desktop.svg") no-repeat center/cover;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: -1;
+}
+button{
+	font-family: inherit;
+}
+/*Attribution*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container{
+	background: #fff;
+	margin: 80px auto;
+	box-shadow: 3px 3px 3px hsl(228, 45%, 44%, 0.15);
+	border-radius: 20px;
+	width: 375px;
+}
+h2{
+	text-align: center;
+	margin-bottom: 15px;
+	color: var(--dark-blue);
+	font-weight: 900;
+}
+.paragraph{
+	text-align: center;
+	width: 250px;
+	margin: auto;
+	color: var(--desaturated-blue);
+	font-size: 13px;
+	line-height: 20px;
+}
+.pricing{
+	background-color: var(--very-pale-blue);
+	margin: 20px 40px 20px 40px;
+	padding: 18px;
+	border-radius: 15px;
+}
+.pricing h4{
+	position: absolute;
+	margin: -55px 0 0 65px;
+	font-size: 15px;
+	font-weight: 900;
+}
+.pricing p{
+	margin-top: -28px;
+	margin-left: 65px;
+	position: absolute;
+	color: var(--desaturated-blue);
+	font-size: 15px;
+}
+.change_btn{
+	color: var(--bright-blue);
+	position: absolute;
+	margin-left: 150px;
+	margin-top: 18px;
+	font-size: 13px;
+	font-weight: 900;
+	transition: .2s;
+}
+.change_btn:hover{
+	opacity: 0.5;
+	text-decoration: none;
+}
+.buttons{
+	margin: 10px 25px 10px 25px;
+	display: flex;
+	flex-direction: column;
+}
+.buttons button:nth-child(1){
+	border: none;
+	background-color: var(--bright-blue);
+	color: #fff;
+	margin-bottom: 20px;
+	padding: 15px;
+	font-weight: 700;
+	border-radius: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s;
+	box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.3);
+}
+.buttons button:nth-child(1):hover{
+	opacity: 0.6;
+}
+.cancel_btn{
+	text-align: center;
+	padding-bottom: 43px;
+}
+.cancel_btn a{
+	color: var(--desaturated-blue);
+	font-weight: 900;
+	font-size: 16px;
+	text-decoration: none;
+	transition: .3s;
+}
+.cancel_btn a:hover{
+	color: var(--dark-blue);
+}
+.hero_img{
+	width: 100%;
+	border-radius: 20px 20px 0 0;
+	margin-bottom: 30px;
+}
+@media(max-width: 768px){
+	.container{
+		width: 330px;
+	}
+	.pricing{
+		margin: 20px 25px 20px 25px
+	}
+	.paragraph{
+		font-size: 15px;
+		line-height: 25px;
+	}
+}
