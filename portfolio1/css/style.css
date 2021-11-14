@@ -486,3 +486,13 @@ footer p:last-child{
 		padding: 15px 70px;
 	}
 }
+
+@media (max-width: 460px){
+	nav ul{
+		top: 70px;
+		height: 52vh;
+	}
+	.container, .about, .services, .contact-me, footer{
+		width: 500px;
+	}
+}
