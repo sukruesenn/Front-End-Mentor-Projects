@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+	--cyan: hsl(179, 62%, 43%);
+	--cyan2: hsla(179, 62%, 43%, 0.8);
+	--bright-yellow: hsl(71, 73%, 54%);
+	--light-gray: hsl(204, 43%, 93%);
+	--grayish-blue: hsl(218, 22%, 67%);
+	--white: #fff;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Karla", sans-serif;
+	background-color: var(--light-gray);
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.card{
+	box-shadow: 0px 0px 14px 1px #00000024;
+	background-color: #ddd;
+	width: 600px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.community{
+	background-color: var(--white);
+	padding: 35px;
+}
+.community h1{
+	color: var(--cyan);
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.community h3{
+	color: var(--bright-yellow);
+	margin-bottom: 10px;
+}
+.community p{
+	color: var(--grayish-blue);
+	font-size: 15px;
+	line-height: 25px;
+}
+.plan{
+	display: flex;
+}
+.sub{
+	background-color: var(--cyan);
+	color: var(--white);
+	padding: 35px;
+	width: 100%;
+}
+.sub h1{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.sub span{
+	font-weight: 700;
+	font-size: 35px;
+	margin-right: 12px;
+	color: var(--white);
+}
+.sub .price{
+	color: rgba(255, 255, 255, 0.5);
+	margin-bottom: 5px;
+}
+.sub .price2{
+	color: var(--light-gray);
+	margin-bottom: 30px;
+	font-size: 15px;
+}
+.sub .btn{
+	background-color: var(--bright-yellow);
+	color: var(--white);
+	border: none;
+	padding: 15px 80px;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 15px;
+	box-shadow: 0px 0px 14px 1px #00000024;
+	cursor: pointer;
+}
+.why{
+	padding: 35px;
+	background-color: var(--cyan2);
+	width: 100%;
+}
+.why h1{
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: var(--white);
+}
+.why p{
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 14px;
+	line-height: 20px;
+}
+@media (max-width: 630px){
+	.card{
+		width: 90%;
+	}
+	.plan{
+		flex-wrap: wrap;
+	}
+	.community, .sub, .why{
+		padding: 20px;
+	}
+	.sub .btn{
+		width: 60%;
+	}
+}
