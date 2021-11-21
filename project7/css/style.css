@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+	--soft-blue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--very-dark-blue : hsl(217, 54%, 11%); /*(main BG)*/
+	--very-dark-blue-2 : hsl(216, 50%, 16%); /*(card BG)*/
+	--very-dark-blue-line : hsl(215, 32%, 27%); /*(line)*/
+	--white: hsl(0, 0%, 100%); 
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Outfit", sans-serif;
+}
+.container{
+	height: 100vh;
+	background-color: var(--very-dark-blue);
+	display: flex;
+	align-items: center;
+}
+.card{
+	width: 260px;
+	background-color: var(--very-dark-blue-2);
+	padding: 20px;
+	margin: 0 auto;
+	border-radius: 15px;
+	height: 490px;
+	box-shadow: 0px 20px 50px rgb(0 0 0 / 0.2);
+}
+.card img{
+	width: 100%;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	position: relative;
+	cursor: pointer;
+}
+.card h3{
+	color: var(--white);
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 18px;
+	transition: .3s;
+	display: inline-block;
+	cursor: pointer;
+}
+.card h3:hover{
+	color: var(--cyan);
+}
+.card p{
+	color: var(--soft-blue);
+	font-weight: 300;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.eth1{
+	display: flex;
+}
+.eth1 img{
+	width: 10px;
+	height: 18px;
+}
+.eth1 .eth-value{
+	color: var(--cyan);
+	font-weight: 400;
+	font-size: 15px;
+	margin-left: 10px;
+}
+.remaining-time{
+	display: flex;
+}
+.remaining-time img{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+.remaining-time p{
+	font-size: 15px;
+	font-weight: 400;
+}
+.border{
+	display: block;
+	border: 0;
+	border-top: 1px solid var(--very-dark-blue-line);
+	margin: 8px 0px;
+	padding: 0;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.profile{
+	display: flex;
+	align-items: center;
+}
+.profile img{
+	width: 25px;
+	height: 25px;
+	border: 1px solid var(--white);
+	border-radius: 50%;
+	margin-right: 20px;
+}
+.profile p{
+	font-size: 15px;
+	font-weight: 400;
+}
+.profile span{
+	color: var(--white);
+	margin-left: 5px;
+	cursor: pointer;
+	transition: .3s;
+}
+.profile span:hover{
+	color: var(--cyan);
+}
