@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+:root{
+	--very-dark-blue: hsl(243, 87%, 12%);
+	--desatured-blue: hsl(238, 22%, 44%);
+
+	--bright-blue: hsl(224, 93%, 58%);
+	--moderate-cyan: hsl(170, 45%, 43%);
+
+	--light-gray: hsl(0, 0%, 75%);
+	--light-grayish-blue: hsl(240, 75%, 98%);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img{
+	max-width: 90%;
+}
+.logo{
+	max-width: 90%;
+}
+.container{
+	padding: 20px;
+	width: 1200px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0px;
+	align-items: center;
+}
+nav img{
+	width: 20%;
+}
+nav ul{
+	display: flex;
+	padding: 0;
+}
+nav ul li{
+	list-style-type: none;
+}
+nav ul li a{
+	text-decoration: none;
+	margin-left: 50px;
+	color: var(--very-dark-blue);
+	font-family: "Raleway", sans-serif;
+}
+.flex{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.flex h1{
+	font-family: "Raleway", sans-serif;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.flex p{
+	font-family: "Open Sans", sans-serif;
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+.flex > div{
+	flex: 1;
+}
+.flex > ul{
+	flex: 1;
+}
+.form1{
+	display: flex;
+}
+.form1 input{
+	flex: 0.5;
+	padding: 13px;
+	border: 1px solid var(--very-dark-blue);
+	border-radius: 3px;
+	outline: none;
+}
+.form1 input::placeholder{
+	color: var(--light-gray);
+}
+.form1 button{
+	flex: 0.3;
+	padding: 13px;
+	margin-left: 15px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	background-color: var(--bright-blue);
+	color: var(--light-grayish-blue);
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	cursor: pointer;
+}
+.wrapper{
+	position: relative;
+	margin: 100px auto 0px;
+	background-color: var(--light-grayish-blue);
+	padding: 70px 0px 50px 0px;
+}
+.wrapper::before{
+	content: '';
+	background: url("../images/bg-curve-desktop.svg") no-repeat center/cover;
+	position: absolute;
+	top: -70px;
+	left: 0;
+	height: 25%;
+	width: 100%;
+	z-index: -100;
+}
+.wrapper h1{
+	font-size: 35px;
+	margin-bottom: 40px;
+}
+.wrapper p{
+	font-size: 14px;
+	color: var(--very-dark-blue);
+}
+.link{
+	color: var(--moderate-cyan);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid var(--moderate-cyan);
+	width: 165px;
+	margin-bottom: 40px;
+	margin-top: -10px;
+}
+.link img{
+	margin-left: 5px;
+}
+.testimonial-box{
+	border-radius: 10px;
+	width: 350px;
+	padding: 25px 40px;
+	background-color: #fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.testimonial-box p{
+	width: 100%;
+	color: var(--very-dark-blue);
+	line-height: 25px;
+	font-size: 13px;
+	font-weight: bolder;
+}
+.testimonial-box .quotes-img{
+	height: 15px;
+	width: 15px;
+}
+.testimonial-box .avatar-img{
+	height: 38px;
+	width: 40px;
+	border-radius: 50%;
+}
+.user-info{
+	display: flex;
+	align-items: center;
+}
+.user-info h4{
+	font-size: 12px;
+	color: var(--very-dark-blue);
+	margin-left: 10px;
+}
+.user-info small{
+	font-size: 10.5px;
+	margin-left: 10px;
+	color: var(--very-dark-blue);
+}
+.desatured-blue{
+	background-color: var(--desatured-blue);
+	color: var(--light-grayish-blue);
+	padding: 50px 0px;
+}
+.desatured-blue h1{
+	font-size: 35px;
+}
+.desatured-blue p{
+	font-size: 15px;
+	width: 470px;
+}
+.form2{
+	display: flex;
+	flex-direction: column;
+}
+.form2 input{
+	width: 80%;
+	padding: 13px;
+	border-radius: 3px;
+	outline: none;
+	margin-bottom: 10px;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.form2 input::placeholder{
+	color: var(--light-gray);
+}
+.form2 button{
+	width: 40%;
+	padding: 13px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	background-color: var(--bright-blue);
+	color: var(--light-grayish-blue);
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px 5px;
+}
+footer{
+	background-color: var(--very-dark-blue);
+	color: var(--light-gray);
+	padding: 80px 0px;
+}
+.logo2{
+	margin-bottom: 20px;
+	max-width: 90%;
+}
+footer ul li{
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+.align-start{
+	display: flex;
+	justify-content: space-between;
+	font-family: "Open Sans", sans-serif;
+}
+.social-media{
+	display: flex;
+}
+.social-media a{
+	text-decoration: none;
+	color: var(--light-gray);
+	border: 1px solid var(--light-gray);
+	border-radius: 50%;
+	margin-left: 15px;
+	font-size: 14px;
+	width: 30px;
+	height: 30px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+@media (max-width: 900px){
+	.form2 button, .form2 input{
+		width: 100%;
+	}
+}
+@media (max-width: 768px){
+	nav{
+		margin-bottom: 50px;
+	}
+	.flex h1, .flex p{
+		text-align: center;
+		width: 100%;
+	}
+	.flex{
+		flex-direction: column;
+	}
+	.form1{
+		justify-content: center;
+		margin-bottom: 80px;
+	}
+	img{
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+	}
+	.testimonial-box{
+		display: block;
+		margin: 0px auto 80px;
+	}
+	.illustration-2{
+		width: 65%;
+	}
+	.link{
+		width: 175px;
+		margin: 25px auto 30px;
+	}
+	.arrow-img{
+		width: 15%;
+	}
+	.form2{
+		display: block;
+	}
+	.logo2{
+		width: 25%;
+		margin: 0px auto 50px;
+	}
+	.logo{
+		width: 20%;
+		margin: 0px 0px 0px 30px;
+	}
+	footer{
+		padding: 30px 0px;
+	}
+}
+@media (max-width: 590px){
+	.align-start{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		font-size: 18px;
+	}
+	.social-media{
+		margin-top: 40px;
+	}
+	.social-media a{
+		font-size: 18px;
+		height: 40px;
+		width: 40px;
+		margin-left: 20px;
+	}
+	footer ul li{
+		margin-bottom: 25px;
+	}
+	.testimonial-box small{
+		font-size: 12px;
+	}
+}
+@media (max-width: 500px){
+	nav ul li a{
+		margin-left: 20px;
+	}
+	.logo{
+		width: 25%;
+	}
+	.logo2{
+		width: 35%;
+	}
+}
+@media (max-width: 452px){
+	.flex h1{
+		font-size: 35px;
+	}
+}
+@media (max-width: 452px){
+	.flex h1{
+		font-size: 30px;
+	}
+}
+@media (max-width: 375px){
+	.testimonial-box{
+		width: 100%;
+	}
+	nav{
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+		font-size: 18px;
+		padding: 15px 0px;
+	}
+	.logo{
+		width: 50%;
+		margin: 0;
+	}
+	.flex h1{
+		font-size: 30px;
+	}
+}
