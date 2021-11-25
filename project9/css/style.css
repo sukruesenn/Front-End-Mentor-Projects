@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root{
+	--strong-cyan: hsl(171, 66%, 44%);
+	--light-blue: hsl(233, 100%, 69%);
+	--dark-grayish-blue: hsl(210, 10%, 33%);
+	--grayish-blue: hsl(201, 11%, 66%);
+	--grayish-blue2: hsla(201, 11%, 66%, 0.1);
+	--white: #fff;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	background: url("../images/bg-header-desktop.png") no-repeat center/cover;
+	width: 100%;
+}
+.logo{
+	width: 90px;
+	margin-bottom: 20px;
+}
+body{
+	font-family: "Bai Jamjuree", sans-serif;
+	text-align: center;
+}
+.container .logo{
+	margin-top: 80px;
+}
+.container{
+	width: 1200px;
+	max-width: 100%;
+	margin: 0px auto;
+}
+.container h1{
+	color: var(--dark-grayish-blue);
+	padding: 10px 0px;
+}
+.two{
+	margin-top: 100px;
+}
+.two h2{
+	margin-bottom: 15px;
+}
+.container h2{
+	color: var(--dark-grayish-blue);
+}
+.container p{
+	color: var(--grayish-blue);
+	padding: 0px 0px 35px 0px;
+	width: 610px;
+	margin: 0 auto;
+}
+button{
+	padding: 13px 30px;
+	border-radius: 30px;
+	color: var(--white);
+	font-family: "Bai Jamjuree", sans-serif;
+	font-weight: 600;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.primary-btn{
+	background-color: var(--strong-cyan);
+	box-shadow: 0px 3px hsl(171, 66%, 35%);
+	margin-right: 50px;
+	transition: .3s;
+}
+.primary-btn:hover{
+	background-color: hsl(171, 66%, 50%);
+	box-shadow: 0px 3px hsl(171, 66%, 50%);
+}
+.secondary-btn{
+	background-color: var(--light-blue);
+	box-shadow: 0px 3px hsl(233, 100%, 60%);
+	transition: .3s;
+}
+.secondary-btn:hover{
+	background-color: hsl(233, 100%, 75%);
+	box-shadow: 0px 3px hsl(233, 100%, 75%);
+}
+.flex{
+	display: flex;
+	text-align: left;
+	align-items: center;
+	justify-content: space-around;
+}
+.container-small{
+	width: 800px;
+}
+.flex h3{
+	color: var(--dark-grayish-blue);
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.flex p{
+	font-size: 13px;
+	width: 250px;
+}
+.flex img{
+	width: 70%;
+	margin-left: -200px;
+}
+.three{
+	margin-top: 120px;
+}
+.devices-img{
+	width: 100%;
+}
+.three h2{
+	margin-bottom: 20px;
+}
+.flex2{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.workflow h4{
+	margin-top: 10px;
+	color: var(--dark-grayish-blue);
+}
+.workflow p{
+	width: 90%;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.workflow{
+	margin-top: 30px;
+}
+.four h2{
+	margin-bottom: 20px;
+}
+.four h3{
+	font-size: 15px;
+	color: var(--grayish-blue);
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.flex3{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 100px;
+	align-items: center;
+}
+.five{
+	margin-top: 150px;
+	margin-bottom: 200px;
+}
+footer{
+	background-color: var(--grayish-blue2);
+	padding: 30px 0px;
+}
+.flex4{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.flex4 a{
+	text-decoration: none;
+	color: var(--dark-grayish-blue);
+	margin-left: 40px;
+	transition: .3s;
+}
+.flex4 a:hover{
+	color: var(--strong-cyan);
+}
+.social-media{
+	display: flex;
+}
+.c-logo img{
+	width: 40%;
+}
+.link-flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.icon a{
+	font-size: 20px;
+	margin-left: 20px;
+}
+@media (max-width: 768px){
+	.flex img{
+		width: 85%;
+		display: block;
+		margin: 0 auto;
+	}
+	.flex{
+		justify-content: center;
+	}
+	.one p, .two p, .three p, .five p{
+		width: 90%;
+	}
+	.flex{
+		flex-direction: column;
+		text-align: center;
+	}
+	.flex img{
+		margin-bottom: 50px;
+	}
+	.flex p{
+		width: 50%;
+		font-size: 15px;
+	}
+	.flex3{
+		justify-content: space-between;
+	}
+	.flex3 .logo1{
+		margin: 0px 50px 50px 50px;
+	}
+	.link-flex{
+		width: 300px;
+		flex-direction: column;
+	}
+	.link-flex a{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 540px){
+	.c-logo{
+		margin-bottom: 20px;
+	}
+	.flex4 a{
+		margin-left: 0px;
+	}
+	.social-media{
+		margin-top: 10px;
+	}
+	.social-media a{
+		margin-left: 20px;
+	}
+	.flex4{
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+@media (max-width: 500px){
+	.container h1{
+		font-size: 25px;
+	}
+	.flex3{
+		flex-direction: column;
+	}
+}
+@media (max-width: 400px){
+	.primary-btn, .secondary-btn{
+		margin: 0;
+	}
+}
+@media (max-width: 350px){
+	button{
+		display: block;
+	}
+	.primary-btn{
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.secondary-btn{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
