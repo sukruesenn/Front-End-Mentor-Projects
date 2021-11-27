@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@600&display=swap');
+:root{
+	--pink: hsl(322, 100%, 66%);
+	--very-pale-cyan: hsl(193, 100%, 96%);
+	--very-dark-cyan: hsl(192, 100%, 9%);
+	--grayish-blue: hsl(208, 11%, 55%);
+	--white: #fff;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+header{
+	background: url("../images/bg-hero-desktop.svg") no-repeat center/cover;
+	background-color: var(--very-pale-cyan);
+}
+/* Nav Bar */
+nav{
+	display: flex;
+	padding: 30px 0px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 10px;
+}
+nav button{
+	border: none;
+	outline: none;
+	padding: 13px 60px;
+	background-color: var(--white);
+	color: var(--very-dark-cyan);
+	border-radius: 30px;
+	font-family: "Poppins", sans-serif;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+	transition: .2s;
+	cursor: pointer;
+}
+.logo{
+	width: 80%
+}
+
+/* Flex & Area1 */
+.flex{
+	display: flex;
+	align-items: center;
+	padding: 50px 0px;
+	margin: 0px 10px;
+}
+.flex img{
+	width: 100%;
+}
+.area1{
+	margin-right: 50px;
+	max-width: 700px;
+}
+.area1 h1{
+	color: var(--very-dark-cyan);
+	margin-bottom: 20px;
+	font-size: 40px;
+	line-height: 60px;
+}
+.area1 p{
+	color: var(--very-dark-cyan);
+	margin-bottom: 30px;
+	line-height: 25px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+}
+.get-started-btn{
+	border: none;
+	outline: none;
+	padding: 15px 50px;
+	background-color: var(--pink);
+	color: var(--white);
+	border-radius: 30px;
+	font-family: "Poppins";
+	cursor: pointer;
+	transition: .2s;
+}
+
+/* Area2 */
+.area2{
+	padding: 100px 0px;
+	width: 1200px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.box{
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	display: flex;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	align-items: center;
+	padding: 0px 50px;
+	height: 45vh;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.box .img-1{
+	width: 70%;
+}
+.box img{
+	width: 100%;
+}
+.box h1{
+	color: var(--very-dark-cyan);
+	margin-bottom: 20px;
+	font-family: "Poppins", sans-serif;
+}
+.box p{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	padding-right: 150px;
+	color: var(--grayish-blue);
+}
+.box-2{
+	flex-direction: row-reverse;
+}
+.box-2 p{
+	padding: 0;
+}
+.box-2-wrapper{
+	margin-left: 150px;
+}
+/* Footer */
+footer{
+	background-color: var(--very-dark-cyan);
+	color: var(--white);
+	margin-top: 120px;
+}
+.container-flex2{
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.logo2{
+	margin: 0px 0px 40px 10px;
+	position: relative;
+	top: -90px;
+}
+.flex2{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: -90px;
+	margin-left: 10px;
+}
+.flex2 ul li{
+	list-style-type: none;
+}
+.social-media{
+	display: flex;
+	flex-wrap: wrap;
+	width: 280px;
+}
+.copyright{
+	font-size: 13px;
+	margin: 200px 0px 0px 10px;
+}
+.social-media a{
+	color: var(--white);
+	font-size: 15px;
+	border: 1px solid var(--white);
+	border-radius: 50%;
+	padding: 15px;
+	display: flex;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+}
+.location-menu{
+	display: flex;
+	width: 350px;
+	margin-bottom: 30px;
+	font-family: "Open Sans", sans-serif;
+}
+.phone-menu, .email-menu{
+	display: flex;
+	margin-bottom: 30px;
+	align-items: flex-end;
+	font-family: "Open Sans", sans-serif;
+}
+.location-menu p, .phone-menu p, .email-menu p{
+	font-size: 15px;
+	line-height: 23px;
+}
+.location-menu img{
+	margin-right: 25px;
+}
+.phone-menu img, .email-menu img{
+	margin-right: 20px;
+}
+.list1 li, .list2 li{
+	margin-bottom: 20px;
+	font-family: "Open Sans", sans-serif;
+}
+.area3{
+	background-color: var(--white);
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 5px;
+	position: relative;
+	top: -140px;
+	padding: 20px 40px;
+	width: 58%;
+	margin: 0 auto;
+}
+.area3 h1{
+	color: var(--very-dark-cyan);
+	font-family: "Poppins", sans-serif;
+	font-size: 25px;
+	padding: 50px 0px 0px 0px;
+}
+.area3 button{
+	border: none;
+	outline: none;
+	padding: 18px 70px;
+	background-color: var(--pink);
+	color: var(--white);
+	border-radius: 30px;
+	font-family: "Poppins";
+	margin: 30px 0px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+/* Button Hover */
+nav button:hover{
+	color: rgba(0, 0, 0, 0.5);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 4px;
+}
+.area3 button:hover{
+	background-color: hsla(322, 100%, 66%, 0.8);
+}
+.get-started-btn:hover{
+	background-color: hsla(322, 100%, 66%, 0.8);
+}
+@media (max-width: 870px){
+	.area3{
+		width: 98%;
+	}
+	.flex2{
+		flex-direction: column;
+	}
+	.location-menu{
+		width: 90%;
+	}
+	.copyright{
+		font-size: 13px;
+		margin: 50px 0px 0px 0px;
+	}
+}
+@media (max-width: 768px){
+	.box .img-1{
+		width: 100%;
+	}
+	.box img{
+		width: 130%;
+		padding-right: 20px;
+	}
+}
+@media (max-width: 720px){
+	.area1{
+		margin-right: 0px;
+	}
+	.flex{
+		flex-direction: column;
+		text-align: center;
+	}
+	.flex h1{
+		margin: 25px 60px;
+	}
+	.flex p{
+		font-size: 18px;
+		margin: 0px 60px 30px;
+	}
+	.flex img{
+		padding: 50px 30px 0px 30px;
+	}
+	.get-started-btn{
+		padding: 15px 75px;
+		font-size: 18px;
+		border-radius: 70px;
+	}
+	.box{
+		flex-direction: column-reverse;
+		text-align: center;
+		height: auto;
+		padding: 50px 0px;
+		margin-bottom: 50px;
+	}
+	.box h1{
+		font-size: 30px;
+	}
+	.box p{
+		padding: 0px 50px;
+		margin-top: 50px;
+	}
+	.box img{
+		width: 50%;
+		padding: 0;
+		margin-bottom: 50px;
+	}
+	.box-2-wrapper{
+		margin: 0;
+	}
+}
+@media (max-width: 600px){
+	.box{
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+	.area3{
+		width: 85%;
+		padding: 20px 10px;
+	}
+}
+@media (max-width: 550px){
+	.flex h1{
+		margin: 25px 30px;
+	}
+	.flex p{
+		font-size: 18px;
+		margin: 0px 30px 30px;
+	}
+	.flex img{
+		padding: 50px 30px 0px 30px;
+	}
+}
+@media (max-width: 520px){
+	.area3 h1{
+		font-size: 23px;
+	}
+}
+@media (max-width: 490px){
+	.area3 h1{
+		font-size: 20px;
+	}
+}
+@media (max-width: 450px){
+	nav button{
+		padding: 10px 50px;
+		font-size: 12px;
+	}
+	.area3 h1{
+		font-size: 25px;
+	}
+	.logo-div{
+		width: 50%;
+	}
+	.logo{
+		width: 70%;
+	}
+}
+@media (max-width: 410px){
+	nav button{
+		padding: 10px 35px;
+		font-size: 10px;
+	}
+	.area3 h1{
+		font-size: 25px;
+	}
+}
+@media (max-width: 400px){
+	.get-started-btn{
+		padding: 10px 40px;
+	}
+	.area3 button{
+		padding: 12px 50px;
+	}
+}
