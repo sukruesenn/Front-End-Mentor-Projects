@@ -255,6 +255,7 @@ nav button:hover{
 	}
 	.copyright{
 		font-size: 13px;
+		font-family: "Open Sans", sans-serif;
 		margin: 50px 0px 0px 0px;
 	}
 }
